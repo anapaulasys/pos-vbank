@@ -1,0 +1,7 @@
+<dataset>
+	<cargo id="100001" descricao_cargo="Gerente de Vendas"/>
+	<cargo id="100002" descricao_cargo="Gerente de Compras"/>
+	
+	<funcionario id="100001" nome="formiga" cpf="09006848956" email="formiga@gmail.com" id_cargo="100001"/>
+	<funcionario id="100002" nome="monica" cpf="09005548625" email="monica@gmail.com"  id_cargo="100002"/>
+</dataset>

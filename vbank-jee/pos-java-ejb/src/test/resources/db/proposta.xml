@@ -1,0 +1,14 @@
+<dataset>
+	
+	<cargo id="100001" descricao_cargo="Gerente de Vendas"/>
+	<cargo id="100002" descricao_cargo="Gerente de Compras"/>
+	
+	<funcionario id="100001" nome="formiga" cpf="09006848956" email="vbankemail@gmail.com"  id_cargo="100001"/>
+	<funcionario id="100002" nome="monica" cpf="09005548625" email="vbankemail@gmail.com" id_cargo="100002"/>
+
+	<usuario id="100001" login="formiga" nome="formiga" senha="123456" funcionario_id="100001" tp_usuario="funcionario"/>
+	<usuario id="100002" login="monica" nome="monica" senha="123456" funcionario_id="100002" tp_usuario="funcionario"/>
+
+	<proposta id="100001" cpf="25283798143" nome="selecao feminina" regiao="Norte" vl_renda="2000.00" dt_proposta="2016-06-20" email="unicesumarjava@gmail.com" tp_situacao="ABERTA"/>
+	<proposta id="100002" cpf="25243798843" nome="Maria" regiao="Norte" vl_renda="5000.00" dt_proposta="2016-06-15" email="unicesumarjava@gmail.com" tp_situacao="ABERTA" />
+</dataset>

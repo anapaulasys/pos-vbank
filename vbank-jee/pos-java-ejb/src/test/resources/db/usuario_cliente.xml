@@ -1,0 +1,10 @@
+<dataset>
+	<conta id="100001" nr_conta="12345" is_contacorrente="true" is_contapoupanca="false"/>
+	<conta id="100002" nr_conta="67890" is_contacorrente="false" is_contapoupanca="true"/>
+
+	<cliente id="100001" nome="Marta" cpf="09005548625" vl_renda="8006.00" id_conta="100001" email="marta@gmail.com"/>
+	<cliente id="100002" nome="formiga" cpf="09006848956" vl_renda="8006.00" id_conta="100001" email="formiga@gmail.com"/>
+
+	<usuario id="100001" nome="Marta" senha="123456" cliente_id="100001" tp_usuario="cliente" login="marta"/>
+	<usuario id="100002" nome="formiga" senha="123456" cliente_id="100002" tp_usuario="cliente" login="formiga"/>
+</dataset>
