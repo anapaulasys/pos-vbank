@@ -17,12 +17,8 @@ import org.junit.runner.RunWith;
 
 import br.com.rp.domain.Log;
 import br.com.rp.integration.Integracao;
-import br.com.rp.repository.LogRepositoryTest;
 import br.com.rp.repository.Repository;
 import br.com.rp.repository.impl.AbstractRepositoryImpl;
-import br.com.rp.repository.service.LogServiceTest;
-import br.com.rp.rest.LogRest;
-import br.com.rp.rest.LogRestTest;
 import br.com.rp.services.LogService;
 
 @RunWith(Arquillian.class)
@@ -50,11 +46,6 @@ public abstract class AbstractTest {
 				.addPackages(false, Repository.class.getPackage())
 				.addPackages(false, AbstractRepositoryImpl.class.getPackage())
 				.addPackages(false, AbstractTest.class.getPackage())
-				.addPackage(LogRepositoryTest.class.getPackage())
-				.addPackage(LogService.class.getPackage())
-				.addPackage(LogServiceTest.class.getPackage())
-				.addPackage(LogRest.class.getPackage())
-				.addPackage(LogRestTest.class.getPackage())
 				.addPackage(Integracao.class.getPackage())
 				.addAsResource("test-persistence.xml", "META-INF/persistence.xml")
 				.addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml").addAsWebInfResource("cesumar-ds.xml")

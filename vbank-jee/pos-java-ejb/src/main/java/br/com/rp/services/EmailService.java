@@ -57,10 +57,10 @@ public class EmailService {
 		props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.port", "465");
-		
+
 		Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("vbankemail@gmail.com", "javaeetime3envioemail123");
+				return new PasswordAuthentication("vbankemail@gmail.com", "javaenvioemail");
 			}
 		});
 		session.setDebug(true);
@@ -68,7 +68,7 @@ public class EmailService {
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress("vbankemail@gmail.com"));
 
-			Address[] toUser = InternetAddress 
+			Address[] toUser = InternetAddress
 					.parse(email.getDestinatario());
 
 			message.setRecipients(Message.RecipientType.TO, toUser);
