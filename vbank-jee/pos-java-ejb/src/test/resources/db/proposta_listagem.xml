@@ -1,6 +1,6 @@
 <dataset>
-	<proposta id="100001" cpf="25283798143" nome="João" regiao="Sul" vl_renda="2000.00" email="joao@gmail.com" dt_proposta="2016-06-20" tp_situacao="ABERTA"/>
-	<proposta id="100002" cpf="25243798843" nome="Maria" regiao="Norte" vl_renda="5000.00" email="maria@gmail.com" dt_proposta="2016-06-15" tp_situacao="ABERTA"/>
-	<proposta id="100003" cpf="25243798843" nome="formiga" regiao="Sul" vl_renda="5000.00" email="formiga@gmail.com" dt_proposta="2016-06-15" tp_situacao="ABERTA"/>
-	<proposta id="100004" cpf="25243798843" nome="Marta" regiao="Sul" vl_renda="5000.00" email="marta@gmail.com" dt_proposta="2016-06-15" tp_situacao="ABERTA"/>
+	<proposta id="100001" cpf="12345678920" nome="João" regiao="Sul" vl_renda="2000.00" email="joao@gmail.com" dt_proposta="2019-06-10" tp_situacao="ABERTA"/>
+	<proposta id="100002" cpf="12345678910" nome="Maria" regiao="Norte" vl_renda="5000.00" email="maria@gmail.com" dt_proposta="2019-06-12" tp_situacao="ABERTA"/>
+	<proposta id="100003" cpf="12345678910" nome="formiga" regiao="Sul" vl_renda="5000.00" email="formiga@gmail.com" dt_proposta="2019-06-12" tp_situacao="ABERTA"/>
+	<proposta id="100004" cpf="12345678910" nome="Marta" regiao="Sul" vl_renda="5000.00" email="marta@gmail.com" dt_proposta="2019-06-12" tp_situacao="ABERTA"/>
 </dataset>

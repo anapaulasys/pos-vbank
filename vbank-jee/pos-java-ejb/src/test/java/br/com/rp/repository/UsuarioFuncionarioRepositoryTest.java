@@ -2,6 +2,7 @@ package br.com.rp.repository;
 
 import javax.ejb.EJB;
 
+import org.jboss.arquillian.core.api.annotation.Inject;
 import org.jboss.arquillian.persistence.UsingDataSet;
 import org.junit.Assert;
 import org.junit.Test;
@@ -14,12 +15,15 @@ import br.com.rp.domain.UsuarioFuncionario;
 public class UsuarioFuncionarioRepositoryTest extends AbstractTest {
 
 	@EJB
+	@Inject
 	private UsuarioFuncionarioRepository usuarioFuncionarioRepository;
 
 	@EJB
+	@Inject
 	private FuncionarioRepository funcionarioRepository;
 
 	@EJB
+	@Inject
 	private CargoRepository cargoRepository;
 
 	@Test

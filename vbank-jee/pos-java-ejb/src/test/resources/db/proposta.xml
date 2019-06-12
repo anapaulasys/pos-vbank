@@ -9,6 +9,6 @@
 	<usuario id="100001" login="formiga" nome="formiga" senha="123456" funcionario_id="100001" tp_usuario="funcionario"/>
 	<usuario id="100002" login="monica" nome="monica" senha="123456" funcionario_id="100002" tp_usuario="funcionario"/>
 
-	<proposta id="100001" cpf="25283798143" nome="selecao feminina" regiao="Norte" vl_renda="2000.00" dt_proposta="2016-06-20" email="unicesumarjava@gmail.com" tp_situacao="ABERTA"/>
-	<proposta id="100002" cpf="25243798843" nome="Maria" regiao="Norte" vl_renda="5000.00" dt_proposta="2016-06-15" email="unicesumarjava@gmail.com" tp_situacao="ABERTA" />
+	<proposta id="100001" cpf="12345678920" nome="selecao feminina" regiao="Norte" vl_renda="2000.00" dt_proposta="2019-06-10" email="unicesumarjava@gmail.com" tp_situacao="ABERTA"/>
+	<proposta id="100002" cpf="12345678910" nome="Maria" regiao="Norte" vl_renda="5000.00" dt_proposta="2019-06-12" email="unicesumarjava@gmail.com" tp_situacao="ABERTA" />
 </dataset>
