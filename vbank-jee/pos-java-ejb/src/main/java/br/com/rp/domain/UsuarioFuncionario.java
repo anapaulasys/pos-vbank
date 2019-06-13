@@ -11,9 +11,6 @@ import javax.persistence.ManyToOne;
 @DiscriminatorValue(value = "funcionario")
 public class UsuarioFuncionario extends Usuario {
 
-	/*
-	 * Funcionário ao qual este usuário pertence.
-	 */
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "funcionario_id", nullable = true)
 	private Funcionario funcionario;

@@ -12,7 +12,7 @@ import br.com.rp.repository.Repository;
 @Interceptors(LogInterceptor.class)
 public abstract class AbstractRepositoryImpl<T extends BaseEntity> implements Repository<T> {
 
-	@PersistenceContext(unitName = "vbankpu")
+	@PersistenceContext(unitName = "vbank")
 	private EntityManager em;
 
 	private Class<T> clazz;

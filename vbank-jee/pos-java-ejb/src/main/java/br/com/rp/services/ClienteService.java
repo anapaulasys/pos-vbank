@@ -15,7 +15,7 @@ import br.com.rp.repository.ClienteRepository;
 @Stateless
 public class ClienteService {
 
-	@PersistenceContext(unitName = "vbankpu")
+	@PersistenceContext(unitName = "vbank")
 	private EntityManager em;
 
 	@EJB

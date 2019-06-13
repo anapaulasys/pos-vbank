@@ -6,14 +6,14 @@ import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 import br.com.rp.domain.Papel;
-import br.com.rp.repository.AcaoRepository;
+import br.com.rp.repository.PapelRepository;
 
 
 @Stateless
-public class AcaoService {
+public class PapelService {
 	
 	@EJB
-	AcaoRepository acaoRepository;
+	PapelRepository acaoRepository;
 	
 	public List<Papel> getAll(){
 		return acaoRepository.getAll();

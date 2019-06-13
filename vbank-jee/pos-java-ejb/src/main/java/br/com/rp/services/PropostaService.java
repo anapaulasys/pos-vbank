@@ -27,7 +27,7 @@ import br.com.rp.repository.PropostaRepository;
 @Stateless
 public class PropostaService {
 
-	@PersistenceContext(unitName = "vbankpu")
+	@PersistenceContext(unitName = "vbank")
 	private EntityManager em;
 
 	@EJB

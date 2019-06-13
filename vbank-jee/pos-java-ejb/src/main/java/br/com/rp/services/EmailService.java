@@ -23,7 +23,7 @@ import br.com.rp.repository.EmailRepository;
 @Stateless
 public class EmailService {
 
-	@PersistenceContext(unitName = "vbankpu")
+	@PersistenceContext(unitName = "vbank")
 	private EntityManager em;
 
 	@EJB

@@ -11,11 +11,6 @@ import javax.persistence.ManyToOne;
 @DiscriminatorValue(value = "cliente")
 public class UsuarioCliente extends Usuario {
 
-	/*
-	 * Cliente a qual este usuario pertence. Importante lembrar que no caso de
-	 * usuário de clientes, o login de acesso será feito pelo número da conta do
-	 * cliente.
-	 */
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "cliente_id", nullable = true)
 	private Cliente cliente;

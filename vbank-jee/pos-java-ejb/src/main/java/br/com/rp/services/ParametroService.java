@@ -18,7 +18,7 @@ import br.com.rp.repository.ParametroRepository;
 @Stateless
 public class ParametroService {
 
-	@PersistenceContext(unitName = "vbankpu")
+	@PersistenceContext(unitName = "vbank")
 	private EntityManager em;
 
 	@EJB

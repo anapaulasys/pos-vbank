@@ -16,7 +16,7 @@ import br.com.rp.repository.FuncionarioRepository;
 @Stateless
 public class FuncionarioService {
 
-	@PersistenceContext(unitName = "vbankpu")
+	@PersistenceContext(unitName = "vbank")
 	private EntityManager em;
 	
 	@EJB
