@@ -10,33 +10,32 @@ import javax.persistence.PersistenceContext;
 
 import br.com.rp.domain.Deposito;
 import br.com.rp.domain.Pagamento;
-import br.com.rp.domain.Parametro;
+import br.com.rp.domain.TimeIntegration;
 import br.com.rp.domain.Transferencia;
-import br.com.rp.repository.ParametroRepository;
-
+import br.com.rp.repository.TimeIntegrationRepository;
 
 @Stateless
-public class ParametroService {
+public class TimeIntegrationService {
 
 	@PersistenceContext(unitName = "vbank")
 	private EntityManager em;
 
 	@EJB
-	private ParametroRepository parametroRepository;
+	private TimeIntegrationRepository parametroRepository;
 
-	public List<Parametro> getAll() {
+	public List<TimeIntegration> getAll() {
 		return parametroRepository.getAll();
 	}
 
-	public Parametro save(Parametro parametro) {
+	public TimeIntegration save(TimeIntegration parametro) {
 		return parametroRepository.save(parametro);
 	}
 
-	public Parametro findParametro() {
-		return em.createQuery("from " + Parametro.class.getSimpleName(), Parametro.class).getSingleResult();
+	public TimeIntegration findParametro() {
+		return em.createQuery("from " + TimeIntegration.class.getSimpleName(), TimeIntegration.class).getSingleResult();
 	}
 
-	public Parametro findById(Long id) {
+	public TimeIntegration findById(Long id) {
 		return parametroRepository.findById(id);
 	}
 
@@ -44,7 +43,7 @@ public class ParametroService {
 		parametroRepository.remove(id);
 	}
 
-	public Boolean isHorarioTransacaoValido(Parametro parametro, Object object) {
+	public Boolean isHorarioTransacaoValido(TimeIntegration parametro, Object object) {
 		Calendar horaTransferencia = Calendar.getInstance();
 		if (object instanceof Deposito) {
 			if (((Deposito) object).getAgendamento() != null)

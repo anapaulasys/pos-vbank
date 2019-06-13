@@ -7,7 +7,7 @@ import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 import br.com.rp.domain.Movimento;
-import br.com.rp.domain.Parametro;
+import br.com.rp.domain.TimeIntegration;
 import br.com.rp.domain.SituacaoTransferencia;
 import br.com.rp.domain.Transferencia;
 import br.com.rp.repository.TransferenciaRepository;
@@ -19,7 +19,7 @@ public class TransferenciaService {
 	private TransferenciaRepository transferenciaRepository;
 
 	@EJB
-	private ParametroService parametroService;
+	private TimeIntegrationService parametroService;
 
 	@EJB
 	private MovimentoService movimentoService;
@@ -33,7 +33,7 @@ public class TransferenciaService {
 	}
 
 	public Transferencia save(Transferencia transferencia) {
-		Parametro parametro = parametroService.findParametro();
+		TimeIntegration parametro = parametroService.findParametro();
 		if (parametroService.isHorarioTransacaoValido(parametro, transferencia)) {
 			Transferencia transf = transferenciaRepository.save(transferencia);
 			if (transf.getSituacaoTransferencia() == SituacaoTransferencia.FINALIZADA) {

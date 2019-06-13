@@ -8,7 +8,6 @@ import javax.ejb.Stateless;
 import br.com.rp.domain.MotivoRejeicao;
 import br.com.rp.repository.MotivoRejeicaoRepository;
 
-
 @Stateless
 public class MotivoRejeicaoService {
 

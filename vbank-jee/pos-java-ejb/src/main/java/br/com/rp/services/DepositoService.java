@@ -8,10 +8,9 @@ import javax.ejb.Stateless;
 
 import br.com.rp.domain.Deposito;
 import br.com.rp.domain.Movimento;
-import br.com.rp.domain.Parametro;
+import br.com.rp.domain.TimeIntegration;
 import br.com.rp.domain.SituacaoDeposito;
 import br.com.rp.repository.DepositoRepository;
-
 
 @Stateless
 public class DepositoService {
@@ -23,14 +22,14 @@ public class DepositoService {
 	private MovimentoService movimentoService;
 
 	@EJB
-	private ParametroService parametroService;
+	private TimeIntegrationService parametroService;
 
 	public List<Deposito> getAll() {
 		return depositoRepository.getAll();
 	}
 
 	public Deposito save(Deposito deposito) {
-		Parametro parametro = parametroService.findParametro();
+		TimeIntegration parametro = parametroService.findParametro();
 		if (parametroService.isHorarioTransacaoValido(parametro, deposito)) {
 			Deposito deposit = depositoRepository.save(deposito);
 			if (deposito.getSituacaoDeposito() == SituacaoDeposito.FINALIZADO) {

@@ -25,7 +25,7 @@ public class MovimentoService {
 	private ContaService contaService;
 
 	@EJB
-	private ParametroService parametroService;
+	private TimeIntegrationService parametroService;
 	
 	public List<Movimento> getAll() {
 		return movimentoRepository.getAll();

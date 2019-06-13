@@ -8,7 +8,6 @@ import javax.ejb.Stateless;
 import br.com.rp.domain.Agendamento;
 import br.com.rp.repository.AgendamentoRepository;
 
-
 @Stateless
 public class AgendamentoService {
 
