@@ -32,21 +32,16 @@ public class FuncionarioRepositoryTest extends AbstractTest {
 		funcionarioRepository.save(funcionario);
 		Assert.assertNotNull(funcionario.getId());
 	}
-	
+
 	@Test
+	@UsingDataSet("db/funcionario.xml")
 	public void deveAlterarFuncionarioComSucesso() {
-		
-		Funcionario funcionarior = new Funcionario();
-		funcionarior.setNome("monica");
-		funcionarior.setId(100001L);
-		funcionarioRepository.save(funcionarior);
-		
 		Funcionario funcionario = funcionarioRepository.findById(100001L);
-		funcionario.setNome("formiga");
+		funcionario.setNome("monica");
 		funcionarioRepository.save(funcionario);
-		Assert.assertEquals("FORMIGA", funcionarioRepository.findById(100001L).getNome());
+		Assert.assertEquals("monica", funcionarioRepository.findById(100001L).getNome());
 	}
-	/*
+
 	@Test
 	@UsingDataSet("db/funcionario.xml")
 	public void deveRemoverFuncionarioComSucesso() {
@@ -77,5 +72,5 @@ public class FuncionarioRepositoryTest extends AbstractTest {
 	public void deveRetornarDoisRegistros(){
 		Assert.assertEquals(2, funcionarioRepository.getAll().size());
 	}
-*/
+
 }
